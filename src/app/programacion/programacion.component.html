@@ -1,0 +1,221 @@
+<body>
+    <header class="container-fluid">
+        <h1>Programación</h1>
+    </header>
+    <div class="container-fluid introduccion">
+        <h2>Empieza a aprender C, uno de los lenguajes más importantes.</h2>
+        <p>Encontrars información clara y ejercicios interesantes. Me puedes escribir dudas y yo con gusto las
+            contestaré.</p>
+    </div>
+    <!--Comienzo de apartado "Informació"-->
+    <h1 class="titulo">Información</h1>
+    <section class="container-fluid">
+        <div class="row">
+            <div class="btn-group-vertical btn-group-lg col-sm-4" style="height: 200px;">
+                <button class="btn boton" (click)="displayuno()">printf y scanf</button>
+                <button class="btn boton" (click)="displaydos()">sentencias</button>
+                <button class="btn boton" (click)="displaytres()">ciclos</button>
+                <button class="btn boton" (click)="displaycuatro()">variables</button>
+            </div>
+            <div class="contenido col-sm-7 scroll">
+                <div [style.display]='principal'>
+                    <h1>Hola</h1>
+                    <p>He notado que en muchas páginas que se da información de estos temas se da muchas vueltas y,
+                        algunas veces, información innecesaria. Decidí crear este blog para que tú no te encuentres con
+                        el mismo problema. <br> En algunas ocasiones doy mi opinión de algunos temas. Sé que muchos no
+                        vienen a leer mi opinión por lo que siempre la doy al final de haber explicado el tema. </p>
+                    <h1>Lenguaje C</h1>
+                    <p>Este es un lenguaje de programación estructurado, el cual permite mucha flexibilidad, esto quiere
+                        decir que le da toda la responsabilidad al desarrollador con respecto a acciones que algunos
+                        otros lenguajes realizan por si mismos. Un ejemplo de esto es: que no se escriba en zonas de
+                        memoria que no pertenecen al área de datos del programa.</p>
+                    <h1>Programación estructurada</h1>
+                    <div>
+                        <p>Es un paradigma de la programación que la divide en tres procesos, que se dice pueden
+                            resolver cualquier problema, estos son: </p>
+                        <ul class="lista1">
+                            <li>
+                                <h2>Secuencial</h2>
+                            </li>
+                            <p> <br> <br> quiere decir que en el programa y código la estructura es la misma, y va de
+                                arriba abajo. </p>
+                            <li>
+                                <h2>Selectiva</h2>
+                            </li>
+                            <p> <br> <br> Estas deciden, después de evaluar una condición, si se tiene o no que compilar
+                                algunas líneas de código. Estas son:
+                                La sentencia if, con su acompañante else, switch. Este tema es tocado a profundidad en
+                                el apartado sentencias selectivas.
+                            </p>
+                            <li>
+                                <h2>Repetitiva</h2>
+                            </li>
+                            <p> <br> <br> Repiten una acción hasta que se cumple una condición.</p>
+                        </ul>
+                    </div>
+                    <h1>Codigo básico</h1>
+                    <p>El codigo básico consiste en la sección de librerias, la identficamos por el signo # seguido de la palabra include.
+                        tenemos la sección de main() este es el metodo principal del programa y dentro de el será que llevemos acabo todo el codigo
+                        a excepción de la declaración de las clases, tema que se tratara después.
+                    </p>
+                    <img src="../../assets/codigo1.png" alt="Codigo-básico">
+                </div>
+                <!--Entrada y salida de datos-->
+                <div [style.display]='displayone'>
+                    <h1>Entrada y salida de datos</h1>
+                    <p>La entrada y salida de datos es fundamental a la hora de hacer un programa por motivos obvios.
+                        La sintaxis para la salida de datos es la siguiente: printf(“contenido”);
+                        Para la entrada de datos necesitamos la declaración previa de una variable. Es obvio que
+                        dependiendo del dato que se necesite es la variable que utilizaremos, para más información checa
+                        el apartado de variables.
+                        La sintaxis es la siguiente: scanf(“%d”,&nombre-dela-variable); dependiendo del tipo de variable
+                        será la letra que precede el símbolo de porcentaje. Antes del nombre de la variable no debes olvidar que siempre se pone un "&".
+                    </p>
+                    <div class="container">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>valor</th>
+                                    <th>tipo de variable</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>%d</td>
+                                    <td>Entero</td>
+                                </tr>
+                                <tr>
+                                    <td>%f</td>
+                                    <td>Decimal</td>
+                                </tr>
+                                <tr>
+                                    <td>%s</td>
+                                    <td>Cadena</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p>
+                        La sintaxis para imprimir una variable es muy similiar a la que se ocupa en el scanf:
+                        printf("%d",x) solo que en este caso no se pone el simobolo amperson antes del nombre de la
+                        variable.
+                    </p>
+                  
+                </div>
+                <!--Sentencias-->
+                <div [style.display]='displaytwo'l class="sentencias">
+          <h1>Sentencias</h1>
+          <p>El desarrollador puede hacer que ciertas líneas de código sean o no leídas, esto por medio de la evaluación de una condición, si es que se cumple entonces se lleva a cabo lo que el programador desee.
+            Enseñaremos dos: el if y el switch. Dependiendo la necesidad que tengas sabrás utilizar uno u otra.
+            If: su traducción al es pañol es “si es que”, “si es que haces esto pasara lo otro”. Su traducción nos dice mucho. La condición va dentro de los paréntesis, en este caso vamos a comparar solo variables del tipo entero.
+            </p>
+            <img src="../../assets/codigo2.png" alt="IF">
+            <p>En caso de que no se cumpla se puede incluir un else, lo que va dentro de los corchetes de este son las lineas de código que se leeran en caso de que no se cumpla la condición. <br> 
+            Tenemos las siguientes opciones para evaluar una variable:
+            </p>
+            <div class="container">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Simbolo</th>
+                            <th>Significado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td><p> < </p></td>
+                        <td>Menor que. Si la variable es menor que el valor que queramos se ejecutara el código.</td>
+                    </tr>
+                    <tr>
+                        <td>==</td>
+                        <td>El doble igual no se debe confundir con un solo igual. Este es para la comparación de variables</td>
+                    </tr>
+                    <tr>
+                        <td>></td>
+                        <td>Mayor que. Si la variable es mallor que el valor que queramos se ejecutara el código.</td>
+                    </tr>
+                    <tr>
+                        <td>=></td>
+                        <td>Se puede unir simbolos, en este caso el codigo se correra si la variable es igual y mayor al valor con el que lo comparemos.</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+                <p>Se puede tener más de una condición y esto se logra concatenando la segunda condición con dos amperson: &&.</p>
+            </div>
+            <p>La otra opción que tenemos es la sentencia while. La variable para evaluar va entre los paréntesis antecedidos por la palabra while. Entre los paréntesis nos encontramos con tres palabras clave:
+                Case, break y default. Después, si el valor de la variable coincide con el case, entonces ejecutara las líneas de código correspondientes. Si no es así continuara evaluando los demás case hasta encontrar el bueno. Si no coincide con ninguno entonces procederá a ejecutar las líneas del default.
+                </p>
+                <img src="../../assets/codigo4.png" alt="switch">
+                </div>
+                <!--Ciclos-->
+                <div [style.display]='displaythree' class="ciclos" >
+                   <h1>Ciclos</h1>
+                   <p>Se repite uno o varios métodos hasta que una condición sea falsa, normalmente lo logramos sumando cierta cantidad a una variable cada que el ciclo se repite. Las herramientas que nos ofrece este lenguaje son las siguientes: </p>
+                <ul >
+                    <li><h2>For</h2></li>
+                    <p>Todas las condiciones van dentro de los paréntesis, con el ciclo for no es diferente. Como podemos observar en la imagen se divide en tres la condición, cada una dividida por un punto y coma. <br>En la primera tenemos la declaración de la variable, la segunda nos indica cuando tiene que parar, la tercera si va a sumarse o a restarse, el doble símbolo de mas indica que se le va a sumar uno cada que se repita el ciclo, el doble menos indica que se le restara uno cada que se repita</p>
+                    <img src="../../assets/codigo3.png" alt="sentencia-for" style="margin-bottom: 80px;">
+                    <img src="../../assets/resultado1.png" alt="resultado1" style="float: right;">
+                    <li><h2>while</h2></li>
+                   <P>While y for son casi lo mismo, lo que los hace diferentes es la sintaxis. En la siguiente imagen puedes observar la diferencia:</P>
+                   <img src="../../assets/codigo5.png" alt="while">
+                   <li><h2>Dowhile</h2></li>
+                <p>Es exactamente lo mismo, lo único que cambia es que evalua la condición después de haber terminado el metodo y no antes como lo hace el while. Aquí tienes un ejemplo:</p>
+                <img src="../../assets/codigo6.png" alt="dowhile">
+                <img src="../../assets/resultado2.png" alt="resultado" style="float: right;">
+                <p>En este ejemplo el metodo se ejecuta una sola vez, pues no tenía una condición para iniciar. Si en lugar de ocupar un do while hubieramos ocupado un while no se hubiera ejecutada ni una vez.</p>
+                </ul>
+                </div>
+                <!--Variables-->
+                <div [style.display]="displayfor">
+                    <h1>variables</h1>
+                    <p>La variable que hasta ahora hemos ocupado más es la de tipo int, la cual es de tipo entero, pero existen algunas otras que nos servirán a la hora de resolver problemas.
+                        Float, nos ayuda a guardar valores de tipo decimal. Char nos ayuda a guardar signos de cualquier tipo, ya sea letra o algún otro símbolo, para hacer una cadena de caracteres podemos crear un arreglo de este tipo de variable. La variable de tipo double es igual al float la diferencia radica en que este puede contener aproximadamente el doble de dígitos. 
+                        </p>
+                </div>
+               <button class="btn botonp" (click)="principall()">principal</button>
+            </div>
+        </div>
+    </section>
+    <!--Fin del apartado "información" comienzo de  "Ejercicios"-->
+    <div class="container-fluid">
+        <h1 class="titulo">Ejercicios</h1>
+    </div>
+
+    <section class="container-fluid">
+        <div class="row">
+
+            <div class="contenido col-sm-7">
+
+                <div [style.display]='ejercicio1'>
+                    este es el ejercicio de printf y scanf
+                </div>
+
+                <div [style.display]='ejercicio2'>
+                    este es el ejercicio de sentencias
+                </div>
+
+                <div [style.display]='ejercicio3'>
+                    este es el ejercicio de ciclos
+                </div>
+
+            </div>
+            <div class="btn-group-vertical btn-group-lg col-sm-4" style="height: 200px;">
+                <button class="btn boton" (click)="ejerciciouno()">Ejercicio P y s</button>
+                <button class="btn boton" (click)="ejerciciodos()">Ejercicios de sentencias</button>
+                <button class="btn boton" (click)=ejerciciotres()>Ejercicios de ciclos</button>
+            </div>
+        </div>
+    </section>
+    <!--fin de apartado "ejercicios"-->
+</body>
+<footer class="footerB container-fluid">
+    <h1>CONTACTANOS</h1>
+    <ul class="redes">
+        <li><a href=""><img src="../../assets/facebook.png" alt="" height="60px"></a></li>
+        <li><a href=""><img src="../../assets/gmail.png" alt="" height="60px"></a></li>
+        <li><a href=""><img src="../../assets/instagram.png" alt="" height="60px"></a></li>
+    </ul>
+
+</footer>

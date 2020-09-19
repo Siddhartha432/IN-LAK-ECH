@@ -1,0 +1,112 @@
+header{
+    background-image: url(../../assets/pexels-lady-escabia-3199399.jpg);
+    h1{
+        font-size: 80px;
+        display: inline;
+        background-color: rgba(0, 0, 0, 0.603);
+        color: white;
+    }
+    background-position: center center;
+    background-size: cover;
+height: 400px;
+}
+.introduccion{
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.boton{
+border:2px solid black;
+margin-bottom: 5px; 
+}
+.boton:hover{
+    background-color: black;
+    color: white;
+}
+.scroll{
+    overflow-y: scroll;
+}
+.contenido{
+    border: 2px solid black;
+    height: 450px;
+    margin-bottom: 20px;
+    h1{
+        font-size: 70px;
+            }
+            h2{
+                font-size: 40px;
+            }
+            p{
+                font-size: 20px;
+            }
+}
+.titulo{
+     color: cadetblue; text-shadow:2px 2px darkmagenta; font-size: 80px;
+}
+
+@media(max-width: 425px){
+    header{
+        h1{
+            font-size: 45px;
+        }
+    }
+    .titulo{
+        font-size: 50px;
+    }
+    .redes{
+        transform: translate(5px, 50px)
+    }
+    img{
+        height: 40px;
+    }
+    li{
+        padding-right: 35px;
+    }
+}
+.footerB{
+    background-color: black;
+    display: block;
+    height: 300px;
+}
+.redes{
+    transform: translate(10px, 50px);
+}
+li{
+    float: left;
+    display: block;
+    padding-left: 80px ;
+}
+.lista1{
+   
+    li{
+padding: 0;
+        display: block;
+    color: rgb(9, 9, 109);
+    
+    }
+}
+.sentencias{
+    tr{
+        text-align: center;
+    }
+}
+.botonp{
+    border: 2px solid black;
+    width: 50%;
+    font-size: 20px;
+    margin: 25px 70px;
+}
+.botonp:hover{
+    background-color: black;
+    color: blanchedalmond;
+}
+.ciclos{
+    
+    li{
+        display: block;
+        float: none;
+        color: rgb(9, 9, 109);
+    }
+    
+}
