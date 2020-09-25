@@ -68,11 +68,17 @@ h1{
 li{
     float: left;
     display: block;
-    padding-left: 80px ;
+    margin-left: 80px ;
+    height: 60px;
+    width: 60px;
+    border: 2px solid white;
+    a{
+        display: block;
+        width: 100%;
+        height: 100%;
+
+    }
 }
 .redes{
     transform: translate(10px, 50px);
-}
-.link{
-    background-image: url(../../assets/facebook.png); height: 60px; width: 60px; background-position: center center; background-size: 60px;
 }
