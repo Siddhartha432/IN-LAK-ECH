@@ -71,7 +71,7 @@ li{
     margin-left: 80px ;
     height: 60px;
     width: 60px;
-    border: 2px solid white;
+    
     a{
         display: block;
         width: 100%;
@@ -84,4 +84,10 @@ li{
 }
 .facebook{
     background-image: url(../../assets/facebook.png); background-size: 60px; background-position: center center;
+}
+.gmail{
+    background-image: url(../../assets/gmail.png); background-size: 60px; background-position: center center;
+}
+.instagram{
+    background-image: url(../../assets/instagram.png); background-size: 60px; background-position: center center;
 }

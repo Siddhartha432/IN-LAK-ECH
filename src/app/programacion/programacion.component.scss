@@ -61,7 +61,7 @@ margin-bottom: 5px;
         height: 40px;
     }
     li{
-        padding-right: 35px;
+        margin-right: 35px;
     }
 }
 .footerB{
@@ -75,7 +75,16 @@ margin-bottom: 5px;
 li{
     float: left;
     display: block;
-    padding-left: 80px ;
+    margin-left: 80px ;
+    height: 60px;
+    width: 60px;
+  
+    a{
+        display: block;
+        width: 100%;
+        height: 100%;
+
+    }
 }
 .lista1{
    
@@ -109,4 +118,57 @@ padding: 0;
         color: rgb(9, 9, 109);
     }
     
+}
+.facebook{
+    background-image: url(../../assets/facebook.png); background-size: 60px; background-position: center center;
+}
+.gmail{
+    background-image: url(../../assets/gmail.png); background-size: 60px; background-position: center center;
+}
+.instagram{
+    background-image: url(../../assets/instagram.png); background-size: 60px; background-position: center center;
+}
+.if{
+    width: 300px;
+    height: 190px;
+    background-image: url(../../assets/codigo2.png);
+    background-position:  center center;
+}
+.switch{
+    background-image: url(../../assets/codigo4.png);
+    width: 450px;
+    height: 330px;
+    background-position: center center;
+}
+.sentencia-for{
+    background-image: url(../../assets/codigo3.png);
+    width: 400px;
+    height: 190px;
+    background-position: center center;
+}
+.resultado1{
+    background-image: url(../../assets/resultado1.png);
+    width: 400px;
+    height: 190px;
+    background-position: center center;
+float: right;
+}
+.while{
+background-image: url(../../assets/codigo5.png);
+width: 450px;
+    height: 190px;
+    background-position: center center;
+}
+.resultado2{
+    background-image: url(../../assets/resultado2.png);
+    float: right;
+    width: 450px;
+    height: 190px;
+    background-position: 50px center;
+}
+.dowhile{
+    background-image: url(../../assets/codigo6.png);
+    width: 450px;
+    height: 190px;
+    background-position: center center;
 }
